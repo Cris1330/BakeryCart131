@@ -1,45 +1,32 @@
 ﻿using System;
-using BakeryCart131.Models;
-using BakeryCart131.DTOS;
+using System.Collections.Generic;
+using System.Linq;
+using BakeryCart131;
 
-namespace BakeryShoppingCart
+namespace BakeryCart131
 {
     class Program
     {
-        private static object myBekeryCart;
-
         static void Main()
         {
-            string response = "";
+            MyClass<string> newClass = new MyClass<string>();
+            newClass.MyProperty = "A value";
+            newClass.MyProperty2 = "AnotherValue";
 
-            ShoppingCart myShoppingCart = new ShoppingCart();
-
-            while (response != "5")
-            {
-                myShoppingCart.PrintMenu();
-
-                response = myShoppingCart.CaptureResponse();
-
-                switch (response)
-                {
-                    case "1":
-                        myBakeryCart.CreateUser();
-                        break;
-                    case "2":
-                        myBakeryCart.CreateCakeReview();
-                        break;
-                    case "3":
-                        myBekeryCart.ShowAllExistingUsers();
-                        break;
-                    case "4":
-                        myBekeryCart.ShowAllExistingCakeReviews();
-                        break;
-                    case "5":
-                        break;
-                    default:
-                        break;
-                }
-            }
+            newClass.PrintSomething();
+            newClass.PrintSomethingElse("Print this");
         }
     }
+}
+
+public class MyClass<T>
+{
+    public string MyProperty { get; set; }
+    public T MyProperty2 { get; set; }
+
+    public void PrintSomething()
+    {
+        Console.WriteLine("This is an action");
+    }
+    
 }
