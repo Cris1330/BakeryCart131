@@ -8,83 +8,53 @@ namespace BakeryCart131
     class Program
     {
 
+
         static void Main()
         {
-            string response = "";
-            List<User> userList = new List<User>();
-            List<Comment> commentList = new List<Comment>();
+            List<Cake> myList = new List<Cake>();
 
-            while (response != "5")
+            Cake myFirstCake = new Cake();
+            myFirstCake.CakeId = 1;
+            myFirstCake.Flavor = "Chocolate";
+            myFirstCake.Form = "Square";
+            myFirstCake.Size = "Medium";
+            myFirstCake.Type = "Wedding Cake";
+
+
+            myList.Add(myFirstCake);
+
+            Cake mySecondCake = new Cake();
+            mySecondCake.CakeId = 1;
+            mySecondCake.Flavor = "Vanilla";
+            mySecondCake.Form = "Round";
+            mySecondCake.Size = "Small";
+            mySecondCake.Type = "Party Cake";
+
+
+            myList.Add(mySecondCake);
+
+            Cake myThirdCake = new Cake();
+            myThirdCake.CakeId = 2;
+            myThirdCake.Flavor = "Vanilla";
+            myThirdCake.Form = "Square";
+            myThirdCake.Size = "Large";
+            myThirdCake.Type = "Graduation Cake";
+
+
+            myList.Add(myThirdCake);
+
+
+
+            List<Cake> result = myList.Where(cake => cake.CakeId == 2).ToList();
+
+
+            foreach (var cake in result)
             {
-                Console.WriteLine("1.Creat a User");
-                Console.WriteLine("2.Creat a Comment");
-                Console.WriteLine("3.Print the List of Users");
-                Console.WriteLine("4.Print the List of Comments");
-                Console.WriteLine("5.Exit");
-
-
-                Console.WriteLine("");
-                Console.WriteLine("Please select an option");
-                response = Console.ReadLine();
-
-                switch (response)
-                {
-                    case "1":
-                        User user = new User();
-                        user.Email = "myemail@somewhere.com";
-                        user.Password = "password";
-                        user.UserId = 1;
-                        user.UserName = "Cristal";
-
-                        userList.Add(user);
-
-                        Console.WriteLine("You have created a user");
-                        break;
-
-                    case "2":
-                        Comment myComment = new Comment();
-                        myComment.CommentId = 1;
-                        myComment.TheComment = "Hello";
-                       
-
-
-                        commentList.Add(myComment);
-
-                        Console.WriteLine("1You have created a comment");
-                        break;
-
-                    case "3":
-                        Console.WriteLine("These is the list of users created");
-
-                        foreach (var insideUser in userList)
-                        {
-                            Console.WriteLine("The user email is " + insideUser.Email);
-                            Console.WriteLine("The user password is " + insideUser.Password);
-                            Console.WriteLine("The user id is " + insideUser.UserId);
-                            Console.WriteLine("The user name is " + insideUser.UserName);
-
-                        }
-                        break;
-                    case "4":
-                        Console.WriteLine("These is the list of comments created");
-
-                        foreach (var insideComment in commentList)
-                        {
-                            Console.WriteLine("The comment id is " + insideComment.CommentId);
-                            Console.WriteLine("The actual comment is " + insideComment.TheComment);
-                           
-
-                        }
-                        break;
-
-                }
+                Console.WriteLine(cake.CakeId);
+                Console.WriteLine(cake.Type);
             }
-
-
-
-
-
         }
+
+
     }
 }
-
