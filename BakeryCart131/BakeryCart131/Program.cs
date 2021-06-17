@@ -9,24 +9,40 @@ namespace BakeryCart131
     {
         static void Main()
         {
-            MyClass<string> newClass = new MyClass<string>();
-            newClass.MyProperty = "A value";
-            newClass.MyProperty2 = "AnotherValue";
+            public void ExecuteMainMenu()
+            {
+                string response = "";
 
-            newClass.PrintSomething();
-            newClass.PrintSomethingElse("Print this");
+                while (response != "7")
+                {
+                    PrintMenu();
+
+                    response = CaptureResponse();
+
+                    switch (response)
+                    {
+                        case "1":
+                            CreateUser();
+                            break;
+                        case "2":
+                            CreateCakeReview();
+                            break;
+                        case "3":
+                            ShowAllExistingUsers();
+                            break;
+                        case "4":
+                            ShowAllExistingCakeReviews();
+                            break;
+                        case "5":
+                            LookForAUser();
+                            break;
+                        case "6":
+                            LookForACakeReview();
+                            break;
+                    }
+                }
+            }
         }
-    }
-}
 
-public class MyClass<T>
-{
-    public string MyProperty { get; set; }
-    public T MyProperty2 { get; set; }
-
-    public void PrintSomething()
-    {
-        Console.WriteLine("This is an action");
     }
-    
 }
