@@ -1,0 +1,12 @@
+/Users/cristalzavala/Desktop/Bakery Cart 131/BakeryCart131/BakeryCart131/bin/Debug/netcoreapp3.1/BakeryCart131.deps.json
+/Users/cristalzavala/Desktop/Bakery Cart 131/BakeryCart131/BakeryCart131/bin/Debug/netcoreapp3.1/BakeryCart131.runtimeconfig.json
+/Users/cristalzavala/Desktop/Bakery Cart 131/BakeryCart131/BakeryCart131/bin/Debug/netcoreapp3.1/BakeryCart131.runtimeconfig.dev.json
+/Users/cristalzavala/Desktop/Bakery Cart 131/BakeryCart131/BakeryCart131/bin/Debug/netcoreapp3.1/BakeryCart131.dll
+/Users/cristalzavala/Desktop/Bakery Cart 131/BakeryCart131/BakeryCart131/bin/Debug/netcoreapp3.1/BakeryCart131.pdb
+/Users/cristalzavala/Desktop/Bakery Cart 131/BakeryCart131/BakeryCart131/obj/Debug/netcoreapp3.1/BakeryCart131.csprojAssemblyReference.cache
+/Users/cristalzavala/Desktop/Bakery Cart 131/BakeryCart131/BakeryCart131/obj/Debug/netcoreapp3.1/BakeryCart131.AssemblyInfoInputs.cache
+/Users/cristalzavala/Desktop/Bakery Cart 131/BakeryCart131/BakeryCart131/obj/Debug/netcoreapp3.1/BakeryCart131.AssemblyInfo.cs
+/Users/cristalzavala/Desktop/Bakery Cart 131/BakeryCart131/BakeryCart131/obj/Debug/netcoreapp3.1/BakeryCart131.csproj.CoreCompileInputs.cache
+/Users/cristalzavala/Desktop/Bakery Cart 131/BakeryCart131/BakeryCart131/obj/Debug/netcoreapp3.1/BakeryCart131.dll
+/Users/cristalzavala/Desktop/Bakery Cart 131/BakeryCart131/BakeryCart131/obj/Debug/netcoreapp3.1/BakeryCart131.pdb
+/Users/cristalzavala/Desktop/Bakery Cart 131/BakeryCart131/BakeryCart131/obj/Debug/netcoreapp3.1/BakeryCart131.genruntimeconfig.cache

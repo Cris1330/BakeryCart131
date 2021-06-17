@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{2EA66987-2E36-452C-AF05-E74B881C9874}|Default">
+  <MonoDevelop.Ide.ItemProperties.BakeryCart131 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BakeryCart131/Program.cs">
+    <Files>
+      <File FileName="BakeryCart131/Program.cs" Line="9" Column="6" />
+      <File FileName="BakeryCart131/Models/Comment.cs" Line="13" Column="2" />
+      <File FileName="BakeryCart131/Models/Cake.cs" Line="32" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BakeryCart131" expanded="True">
+            <Node name="BakeryCart131" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="DTOS" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="MyClasses" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
