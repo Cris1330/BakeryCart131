@@ -1,60 +1,45 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using BakeryCart131.Models;
+using BakeryCart131.DTOS;
 
-namespace BakeryCart131
+namespace BakeryShoppingCart
 {
     class Program
     {
-
+        private static object myBekeryCart;
 
         static void Main()
         {
-            List<Cake> myList = new List<Cake>();
+            string response = "";
 
-            Cake myFirstCake = new Cake();
-            myFirstCake.CakeId = 1;
-            myFirstCake.Flavor = "Chocolate";
-            myFirstCake.Form = "Square";
-            myFirstCake.Size = "Medium";
-            myFirstCake.Type = "Wedding Cake";
+            ShoppingCart myShoppingCart = new ShoppingCart();
 
-
-            myList.Add(myFirstCake);
-
-            Cake mySecondCake = new Cake();
-            mySecondCake.CakeId = 1;
-            mySecondCake.Flavor = "Vanilla";
-            mySecondCake.Form = "Round";
-            mySecondCake.Size = "Small";
-            mySecondCake.Type = "Party Cake";
-
-
-            myList.Add(mySecondCake);
-
-            Cake myThirdCake = new Cake();
-            myThirdCake.CakeId = 2;
-            myThirdCake.Flavor = "Vanilla";
-            myThirdCake.Form = "Square";
-            myThirdCake.Size = "Large";
-            myThirdCake.Type = "Graduation Cake";
-
-
-            myList.Add(myThirdCake);
-
-
-
-            List<Cake> result = myList.Where(cake => cake.CakeId == 2).ToList();
-
-
-            foreach (var cake in result)
+            while (response != "5")
             {
-                Console.WriteLine(cake.CakeId);
-                Console.WriteLine(cake.Type);
+                myShoppingCart.PrintMenu();
+
+                response = myShoppingCart.CaptureResponse();
+
+                switch (response)
+                {
+                    case "1":
+                        myBakeryCart.CreateUser();
+                        break;
+                    case "2":
+                        myBakeryCart.CreateCakeReview();
+                        break;
+                    case "3":
+                        myBekeryCart.ShowAllExistingUsers();
+                        break;
+                    case "4":
+                        myBekeryCart.ShowAllExistingCakeReviews();
+                        break;
+                    case "5":
+                        break;
+                    default:
+                        break;
+                }
             }
         }
-
-
     }
 }
